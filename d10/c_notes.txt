@@ -1,0 +1,113 @@
+ng-app.
+
+	Angular Framework starts the execution from ng-app directive.
+
+	ng-app directive is the root directive.
+
+	ng-app directive takes the logical name of web application.
+
+	logical name of web application is mandatory , if our application dynamic.
+
+	logical name of web application is optional , if our application is static.
+
+	we can take "only one ng-app" directive per web application.
+
+
+Auto Bootstrap.
+
+	Angular Framework identifies the ng-app directive , and starts the Execution automatically called as AutoBootstrap.
+
+
+Manual BootStrap.
+
+	Executing the Angular Application Forcefully without ng-app directive called as Manual Bootstrap.
+
+
+Example_1.
+-
+<html>
+	<div ng-app>
+		Addition.{{10+10}}
+		<div>
+			Subtraction.{{20-10}}
+		</div>
+	</div>
+	<br><br>
+	<div>
+		Multiplication.{{10*10}}
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+</html>
+
+O/P.
+	Addition . 20
+	Subtraction . 10
+	Multiplication . {{10*10}}
+	[Note. Multiplication div outside of ng-app scope] 
+
+
+
+Example_2.
+
+<html>
+	<h1 style="color:red">Addition.{{10+10}}</h1>
+	<h1 style="color:green">Subtraction.{{20-10}}</h1>
+	<h1 style="color:blue">Multiplication.{{10*10}}</h1>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/angular.min.js"></script>
+	<script>
+		// if document object creates successfully , 
+		  then execute the angular application forcefully.
+		angular.element(document).ready(function(response){
+
+			angular.bootstrap(document);
+		});
+
+	</script>
+
+</html>
+
+Example_3
+
+	******************************
+	app(folder)
+
+		ngAppDemo(folder)
+
+			Example_3 (folder)
+
+				index.html
+
+				app.js
+
+				controllers (folder)
+
+					ctrl.js
+
+				manual_bootstrap.js
+	***************************************
+
+
+Example_4
+
+
+	******************************
+	app(folder)
+		ngAppDemo(folder)
+			Example_4 (folder)
+				index.html
+				app.js
+				controllers (folder)
+					ctrl_one.js
+					ctrl_one.js
+				manual_bootstrap.js
+	***************************************
+
+
+
+
+
+
+
+
+

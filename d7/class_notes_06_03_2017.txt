@@ -1,0 +1,195 @@
+Directives.
+
+	- By using directives we can enhance the HTML Capabilities.
+
+	- In AngularJS We Can Use the Directives in 3 ways.
+
+	1.As an Element (HTML Element)
+
+	2.As an Class   (CSS Class)
+
+	3.As an Attribute  (HTML Attributes)
+
+
+Ex.
+
+	Directive  --         "my_directive"
+
+
+<my_directive></my_directive>    // Element Usage
+
+<h1 class="my_directive"></h1>   // CSS Class Usage
+
+<h1 my_directive></h1>           // Attribute Usage
+
+
+	- We Have Two Types of Directives.
+
+		1.Predefined Directives
+
+
+			The Directives Given By the Framework Called as Predefined Directives.
+
+
+
+		2.Custom Directives
+
+			
+			The Directives Developed  By Developer Based on Application Requirement 
+
+                        Called as Custom Directives
+
+
+
+
+Predefined Directives.
+
+	
+1.ng-controller
+
+	- This Directive used to declare the Controllers in View (HTML)
+
+	Ex.
+
+		ng-controller = "name of the Controller"
+
+	
+	- name of the controller is "user defined" name.
+
+	Ex.
+
+		ng-controller="my_controller"
+
+
+	- As a Developer we can take more than one controller per web Application.
+
+	Ex.
+
+		<html>
+
+				<div ng-controller="ctrl_one">
+
+				</div>
+
+
+				<div ng-controller="ctrl_two">
+
+
+				</div>
+
+		</html>
+
+	- In Genaral we will implement Controllers in JavaScript.
+
+	Ex.
+
+		app.controller("ctrl_one" , ctrl_one); //arg1 - name of the controller.
+
+						       //arg2 - function to implement the                                                                       controller.
+
+
+
+		ctrl_one.$inject=["$scope"];
+
+
+		function ctrl_one($scope){
+
+
+			//Logic Goes Here
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

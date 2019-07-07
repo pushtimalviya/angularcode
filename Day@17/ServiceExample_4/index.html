@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="ctrl">
+
+    <h1 style="color: red">{{var_one}}</h1>
+    <h1 style="color: green">{{var_two}}</h1>
+    <h1 style="color: blue">{{var_three}}</h1>
+
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script>
+        var app = angular.module("app",[]);
+
+        app.controller("ctrl",ctrl);
+        ctrl.$inject=["$scope","$timeout","$interval","$location"];
+        function ctrl($scope,$timeout,$interval,$location) {
+            $scope.var_one = "Before Timeout Service !";
+            $timeout(my_fun,5000);
+            function my_fun() {
+                $scope.var_one = "After Timeout Service !";
+            }
+
+
+            $scope.var_two=new Date().toLocaleTimeString();
+            $interval(timer,1000);
+            function timer(){
+                $scope.var_two=new Date().toLocaleTimeString();
+            }
+
+            $scope.var_three = $location.absUrl();
+
+        }
+    </script>
+</html>

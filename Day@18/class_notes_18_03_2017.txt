@@ -1,0 +1,45 @@
+index.html
+-
+
+<input type="email" ng-model="uemail">
+<br><br>
+<input type="password" ng-model="upwd">
+
+<a href="#page_one/uemail/upwd"><b>Page_One</b></a>
+
+
+config.js
+-
+
+$routeProvider.when("/page_one/:param1/:param2,{
+	templateUrl:'templates/page_one.html',
+	controller:'page_one'
+});
+
+
+page_one.js
+-
+
+app.controller("page_one",page_one);
+
+page_one.$inject = ["$scope","$routeParams"]
+
+function page_one($scope,$routeParams){
+
+	$scope.var_one = $routeParams.param1+"..."+$routeParams.param2;
+}
+
+
+Single Page Applications by using ui.router module.
+
+1.ui.router module is the 3rd party module.
+
+2.ui.router module supports nested routing.
+
+3.ui.router module supports Objects in the URL Parameters
+
+4.ui.router module supports the Named Routings
+
+
+
+

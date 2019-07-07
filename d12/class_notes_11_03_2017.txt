@@ -1,0 +1,117 @@
+ng-init.
+
+	used to initilize the Application Data Statically.
+
+	we can initilize the Application Data in the form of a "key&value" pairs.
+
+	each "key&value" pair separated by using ";"
+
+Ex.
+
+	key1=10;key2="Hello";key3=true;.........
+
+
+
+ng-submit.
+
+	used to submit the form at a time to the controller.
+
+
+Syntax.
+
+<form ng-submit="user defined function">
+
+
+	//Form Elements
+
+</form>
+
+
+ng-dblclick
+
+	- when ever we double click the user interface elements , automatically 
+	
+          angular framework will execute the ng-dblclick directive.
+
+
+Syntax.
+
+	ng-dblclick = "Expression" /
+
+			"user defined function" /
+
+			"user defined function with optional parameters"
+
+
+ng-switch.
+	used to write switch cases in Angular Application.
+
+
+Syntax.
+
+	ng-switch = "Expression"
+
+	ng-switch-when="Value1"
+
+			---
+			---  Logic Goes Here
+			---	
+
+	ng-switch-when="Value2"
+
+			---
+			---  Logic Goes Here
+			---
+
+	---
+	---
+	
+	ng-switch-default
+			---
+			--- Default Logic Goes Here
+			---	
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

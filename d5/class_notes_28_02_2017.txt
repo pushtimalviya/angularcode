@@ -1,0 +1,171 @@
+Development Of Angular Applications in WebStrom IDE.
+
+Website : 
+https://www.jetbrains.com/webstorm/download/#section=windows-version
+
+
+file name : WebStrom-2016.3.3.exe
+
+Creating the Angular Application in WebStrom Steps.
+
+File -- >  New --> project..
+
+Select the AngularJS (Left Panel)
+
+Give the Path in Rigth Panel (Where to save the Applications)
+
+	Ex. d:\Angular_9AM
+
+-->Create
+
+--> This Window
+
+-->OK
+
+
+WebStrom IDE Will Create the Two Main Folders.
+
+1.app
+
+	used to develop the Angular Applications
+
+
+2.e2e-tests
+
+	used to write the test cases for Angular Applications
+
+	e2e - end to end 
+
+
+------------------------
+
+app (folder)
+
+	demo(folder)
+
+		index.html
+
+-------------------------
+
+
+
+Creating the Angular Applications in Ecilipse IDE
+-
+
+File
+	New
+
+		dynamic web project
+
+
+Project Name : Test
+
+
+web module version : 2.2
+
+
+Next --> Next --> Next --> Finish.
+
+
+-----------------------------
+
+- rigth click on Test (Project)
+
+- configure
+
+- convert to AngularJS Project..
+
+- OK
+
+
+Executing the Angular Application in Ecilipse IDE
+-
+
+rigth click on Project (Test)
+
+	run as
+
+	run on server
+
+	select tomcat server
+
+	finish
+
+
+index.html
+-
+
+<!DOCTYPE html>
+<html ng-app>
+
+	<input type="text" ng-model="sub_one"><br><br>
+	<input type="text" ng-model="sub_two"><br><br>
+	<input type="text" ng-model="sub_three"><br><br>
+	
+	<h1 style="color: red">{{sub_one+"..."+sub_two+"..."+sub_three}}</h1>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+	

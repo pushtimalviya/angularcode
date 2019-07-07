@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="ctrl">
+
+    <table class="table table-responsive">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Country</th>
+        </tr>
+        <tr ng-repeat="x in var_one">
+            <td>{{x.Name}}</td>
+            <td>{{x.City}}</td>
+            <td>{{x.Country}}</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+   <table border="2">
+       <tr>
+           <th>id</th>
+           <th>fname</th>
+           <th>fsubject</th>
+       </tr>
+
+       <tr ng-repeat="x in var_two">
+           <td>{{x.post.id}}</td>
+           <td>{{x.post.fname}}</td>
+           <td>{{x.post.fsubject}}</td>
+       </tr>
+   </table>
+
+    <br><br>
+
+    <h1 style="color: red">{{var_three}}</h1>
+
+
+
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="services/my_service.js"></script>
+    <script src="controllers/ctrl.js"></script>
+</html>

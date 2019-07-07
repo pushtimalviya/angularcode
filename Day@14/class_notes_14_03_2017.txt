@@ -1,0 +1,142 @@
+Custom Services.
+
+	The Services Developed by developer 
+
+	based on Application Requirement called as Custom Services.
+
+	In AngularJS We Can Create Custom Services in 5 ways.
+
+	1.provider()
+
+	2.factory()
+
+	3.value()
+
+	4.constant()
+
+	5.service()
+
+
+Creating the Custom Service By Using provider().
+-
+app.provider("my_service" , my_service);
+function my_service(){
+	this.$get = function(){
+		return "Data From MongoDB Soon....";
+	}
+}
+
+
+ctrl_one.js
+-
+app.controller('ctrl_one',ctrl_one);
+
+ctrl_one.$inject=['$scope','my_service'];
+
+function ctrl_one($scope,my_service){
+
+	$scope.var_one=my_service;
+}
+
+
+ctrl_two.js
+-
+app.controller('ctrl_two',ctrl_two);
+
+ctrl_two.$inject=['$scope','my_service'];
+
+function ctrl_two($scope,my_service){
+
+	$scope.var_two=my_service;
+}
+
+app.js
+-
+
+var app=angular.module("app",[]);
+
+
+index.html
+-
+
+
+<div ng-controller="ctrl_one">
+
+	{{var_one}}
+
+</div>
+
+
+<div ng-controller="ctrl_two">
+
+	{{var_two}}
+
+</div>
+
+
+	*****************************************************
+app (folder)
+	Service_Example_1 (folder)
+		bower.json
+		.bowerrc.json
+		index.html
+		app.js
+		services (folder)
+			my_service.js
+		controllers(folder)
+			ctrl_one.js
+			ctrl_two_js
+			
+		config.js
+	********************************************************
+
+
+Creating the Custom Service by using factory().
+-
+app.factory("my_service",my_service);
+function my_service(){
+	return "I am from Factory";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

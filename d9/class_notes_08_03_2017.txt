@@ -1,0 +1,83 @@
+AngularJS Framework Path Given By Bower.
+
+bower_components / angular / angular.min.js
+
+
+BootStrap Framework Path Given By bower.
+
+bower_components / bootstrap / dist / css / bootstrap.min.css
+
+
+ng-repeat.
+
+	used to iterate the list of elements from an collection.
+
+Syntax.
+
+	ng-repeat = "'iteration variable' in 'collection'"
+
+Ex.
+
+	ng-repeat="x in [10,20,30,40,50]"
+
+	{{x}}
+
+O/P.
+
+	10
+	20
+	30
+	40
+	50
+
+
+Predefined Services in ng-repeat Directive.
+
+1.$first
+
+	it will return "first index of an collection" as true.
+2.$last
+
+	it will return "last index of an collection" as true.
+
+3.$middle
+
+	it will return "middle indexes of an collection" as true.
+
+4.$even
+
+	it will retuen "even indexes of an collection" as true.
+
+5.$odd
+
+	it will return "odd indexes of an collection" as true. 
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

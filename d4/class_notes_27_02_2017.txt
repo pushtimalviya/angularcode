@@ -1,0 +1,246 @@
+Angular Applications.
+
+	by using AngularJS We Can Create two types of Angular Applications.
+
+
+1.Static Angular Application
+
+2.Dynamic Angular Application
+
+
+Static Angular Application.
+
+	if View (Presentation Layer) (Recomended Tech : HTML5) not interacting with 
+
+controller for dynamic data , then such type of Angular Application called as Static 
+
+Angular Application.
+
+
+Dynamic Angular Application.
+
+	If View Interacting with the Controller , for Dynamic Data Then Such type of 
+
+Angular Appliocation Called as Dynamic Angular Application.
+
+
+Steps to Create the Static Angular Application.
+-
+
+Step 1.
+
+	Create the Directory Structure for Angular Application (Folder Structure).
+
+	
+	*********************
+
+Example_1 (folder)
+
+	index.html
+
+	*********************
+
+	- Open the Folder Structure by using sublime text editor.
+
+
+
+Step 2.
+
+	Load the Angular Framework by using CDN.
+
+
+index.html
+-
+
+<html>
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+</html>
+
+
+Step 3.
+
+	Declare the "ng-app" directive.
+
+
+
+<html ng-app>
+
+
+</html>
+
+1."ng-app" is a directive in AngularJS.
+
+2.angular framework starts the execution from ng-app directive
+  (angular.min.js)
+
+3.ng-app directive takes the logical name of web application.
+
+  - if our application is static , then logical name is the 
+    
+    optional
+
+  - if our application is dynamic , then logical name of web 
+    application mandatory.
+
+
+4. we can't take more than one ng-app directive.
+
+
+
+Step 4.
+
+	
+	Create the Models in Angular Application
+
+index.html
+-
+
+<html ng-app>
+
+
+	<input type="number" ng-model="model_one">
+
+	<input type="number" ng-model="model_two">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+</html>
+
+
+
+Step 5.
+
+	Bind the Model Data to the HTML Elements
+
+<h1 ng-bind="model_one+model_two"></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

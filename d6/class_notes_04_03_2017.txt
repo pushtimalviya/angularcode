@@ -1,0 +1,174 @@
+Dynamic Angular Application.
+
+	if view (Presentation Layer) interacting with the 
+controller for dynamic data (DataBase Data), then such type 
+
+of Angular Application Called as Dynamic Angular Application. 
+
+
+
+
+Steps to Create the Dynamic Angular Application.
+-
+
+Step 1.
+
+	Load the Angular Framework.
+
+
+Step 2.
+
+	Declare the ng-app directive with the logical name of web 
+application.
+
+	
+[ we given "app" as the logical name of web application ]
+
+
+Step 3.
+
+	Declare the Controller in View (index.html) by using ng-
+controller directive.
+
+
+
+[ 'ctrl' is the name of the controller ]
+
+
+Step 4.
+	Instantiate the Module (Getting the index.html file 
+
+controller)
+
+
+
+Step 5.
+
+	Implement the Controller.
+
+obj.controller('name of the controller' , 
+               'function to implement controller')
+
+
+
+
+
+Steps to Design the Dynamic Angular Application with Coding 
+Standards (Industrial Standards)
+
+
+
+
+
+Step 1.
+
+	Create the Directory Structure.
+     
+         ******************************
+app (folder)
+
+	DynamicAngularApplication(folder)
+
+		index.html
+
+		app.js
+
+		controllers  (folder)
+
+			ctrl.js
+	  *******************************
+
+
+
+Step 2.
+
+	Create the View (index.html)
+
+
+index.html
+-
+
+<html ng-app="app">
+
+	<div ng-controller="ctrl">{{var_one}}</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+	<script src="app.js"></script>
+
+	<script src="controllers/ctrl.js"></script>
+
+</html>
+
+
+
+Step 3.
+
+	Create the app.js (Instantiate the Module)
+
+
+var app = angular.module("app",[]);
+
+
+Step 4.
+
+	Implement the Controller (ctrl.js)
+
+app.controller("ctrl" , ctrl);  
+
+ctrl.$inject=["$scope"];
+
+function ctrl($scope){
+
+
+	$scope.var_one="Data From DB Soon...";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

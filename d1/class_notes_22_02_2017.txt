@@ -1,0 +1,225 @@
+AngularJS.
+
+	AngularJS is a client side javascript MVC Framework.
+
+
+library & framework ?
+
+
+library.
+
+	As a developer we must the library while developing the Applications.
+
+Ex.
+
+	jQuery
+
+
+framework.
+
+	Framework will call our Application.
+
+	when ever we follow the rules & regulations of framework , then only 
+        
+        framework will call our application.
+
+	Ex.
+
+		AngularJS
+
+	- AngularJS Follows the MVC Design Pattern
+
+		M - Model (JavaScript Variables)
+
+		V - View (HTML / HTML5)
+
+		C - Controller (JavaScript Functions)
+
+	- AngularJS Have a so many predefined modules, as a AngularJS Developer we 
+          
+	  can use the Predefined Modules.
+
+	Ex.
+
+		ngAnimate
+
+		ngMessages
+
+		ngStorage
+
+		ngRoute
+
+		ui.router
+
+		--
+		--
+		--
+
+
+ngAnimate.
+
+	used to develop the Animations in Angular Applications.
+
+
+ngMessages.
+
+	used to handle the client side validations
+
+ngStorage.
+
+	used to work with the storages
+
+	AngularJS Supports the two types of storages.
+
+	1.localStorage
+
+	2.sessionStorage
+
+
+
+ngRoute.
+
+	used to develop the Routings in Single Page Applications.
+
+	now a days no body using the 'ngRoute' module because of it's limitations.
+
+
+ui.router.
+
+	used to develop the Routings in Single Page Applications.
+
+	ui.router module is the 3rd party module.
+
+	ui.router module have a so many advantages compared to ngRoute Module.
+
+	now a days all most all the projects they are using the ui.router module.
+		
+
+index.html
+-
+
+<html ng-app="sampleApp">
+
+
+//Develop the Animations , Validations , SPA - ui.router , Storages
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+<script>
+   angular.module("sampleApp",["ngAnimate","ngStorage","ui.router","ngMessages"]);
+</script>
+
+
+</html>
+
+
+
+- AngularJS 'Dependency Injection' eliminates the much of the code to write (Reduces the 
+  Burden on the Developer)
+
+
+
+
+
+Advantages of AngularJS.
+
+
+1.AngularJS is a Open Source Code.
+
+
+2.As a Developer we can directly work with the HTML DOM (Document Object Model).
+
+
+
+
+
+Note.  We can directly work with the HTML DOM Without Depending on JavaScript
+
+
+
+
+
+
+	Flow of Above Program.
+
+1.Angular Framework (angular.min.js) will start the execution from ng-app directive.
+
+
+2. when ever framework encountered the ng-model directive , automatically internally 
+   object will be created by framework with data.
+
+
+3.ng-bind directive will fetch the data from model (object) and gives to HTML Output 
+  Elements
+
+
+
+Note. by using directives we can work with the HTML DOM in AngularJS.
+
+Ex.
+
+	ng-app
+
+	ng-model
+
+	ng-bind
+
+	--
+	--
+	--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

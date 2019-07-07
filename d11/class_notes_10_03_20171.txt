@@ -1,0 +1,172 @@
+ng-options.
+
+	used to populate the data to the dropdown.
+
+Syntax.
+
+<select ng-model="my_model" 
+
+	ng-options=" 'model_value' as 
+
+		      'dropdown_value' for 
+
+		     'iteration_variable' in 
+
+		    'collection'">
+
+</select>
+
+
+Ex.
+
+ctrl.js
+-
+
+$scope.data = ["Hello_1" , "Hello_2" ,"Hello_3" ,"Hello_4", "Hello_5"];
+
+index.html
+-
+
+<select ng-model="my_model"  ng-options = "x as x for x in data">
+
+</select>
+
+
+
+Ex.
+
+$scope.data = [{id:1,name:'Hello_1'},
+		{id:2,name:'Hello_2'},
+		{id:3,name:'Hello_3'},
+		{id:4,name:'Hello_4'},
+		{id:5,name:'Hello_5'}
+	     ];
+
+Use Case 1.
+
+	Dropdown --- Hello_1   to  Hello_5
+
+	model   ---  1  --- 5
+
+<select ng-model="my_model" ng-options="x.id as x.name for x in data"
+
+
+Use Case 2.
+
+	Dropdown  ---  1 to  5
+
+	model     ---  Hello_1  to Hello_5
+
+
+Ex.   x.name as x.id for x in data
+
+
+
+Use Case 3.
+
+	Dropdown - 1 to 5
+	
+	Model   -  1 to 5
+
+Ex.
+
+	x.id as x.id for x in data
+
+
+Use Case 4.
+
+	Drodown - Hello_1 to Hello_5
+
+	Model   - Hello_1 to Hello_5
+
+Ex.
+
+	x.name as x.name for x in data
+
+
+ng-class-even
+	- used to apply the CSS Classes to the even rows of table.
+ng-class-odd
+	- used to apply the CSS Classes to the odd rows of table.	
+
+Ex.
+
+	.even{
+
+		color:red;
+		padding:5px;
+		font-weigth:bold;
+	}	
+
+	.odd{
+
+		color:green;
+		padding:5px;
+		font-weigth:bold;
+	}		
+
+
+	$scope.data = [{id:1,name:'Hello_1'},
+		{id:2,name:'Hello_2'},
+		{id:3,name:'Hello_3'},
+		{id:4,name:'Hello_4'},
+		{id:5,name:'Hello_5'}
+	     ];
+
+	
+	<table border="1">
+		<tr>
+			<th>ID</th>
+			<th>Name</th>
+		</tr>
+
+		<tr ng-repeat="x in data" 
+		    ng-class-even="'even'" 
+		    ng-class-odd="'odd'">
+			<td>{{x.id}}</td>
+			<td>{{x.name}}</td>
+		</tr>
+	</table>
+
+
+ng-if.
+
+	used to write the conditions in view.
+
+	ng-if directive directly works with the HTML DOM.
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

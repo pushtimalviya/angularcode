@@ -1,0 +1,144 @@
+bower.
+
+	bower is a Automation tool in UI Technologies
+
+	bower used to download the Required Resources for Web Application Development.
+
+	bower is a Automation tool , provided by NodeJS.
+
+
+bower components.
+
+	bower providing two major components
+
+1.bower.json
+
+
+2. .bowerrc.json
+
+
+
+bower.json
+-
+	used to maintain the Required Resources to develop the Web Application.
+
+Ex.
+
+{
+
+
+	"name":"name of the developer",
+
+	"version":"release version",
+
+	"description":"description of project",
+
+	"licence" : "--------------",
+
+
+	"dependencies":{
+
+		"angular":"~1.6.0",
+
+		"bootstrap":"~3.3.6"
+
+		"reactJS":"~1.1.6"
+	}
+
+}
+
+
+.bowerrc.json
+-
+
+	used to locate the path for the downloding resources from bower.
+
+
+{
+
+	"directory":"bower_components"
+
+}
+
+
+
+Flow of Bower Components
+-
+
+
+1.After Creating the Bower Components , we must install the bower components by using following 
+  Node Command
+
+Ex.
+
+	bower install
+
+
+2.Bower Internally Communicating with the Node & GIT Repository.
+
+
+3.GIT will Identify the Required Resources from "bower.json" and downloads to Destination path 
+  
+  given in  ".bowerrc.json"
+
+
+4. "~" Operator insist the GIT To Download the latest Versions of Required Resources 
+   mentioned in "bower.json" file.
+
+
+5."^" Opearator insist the GIT to Download the Exact Version of Required Resources 
+  Mentioned in "biwer.json" file.
+
+
+
+
+
+Installation Of Softwares to Run Bower.
+-
+
+1.Download and Install the NodeJS.
+
+WebSite : https://nodejs.org/en/download/
+
+file name : node-v6.10.0-x86.msi
+
+
+
+
+2.download and install the GIT.
+
+website : https://git-scm.com/downloads
+
+file name : Git-2.11.1-32-bit.exe
+
+
+3.Install the bower By using Following Node Command
+
+	npm install -g bower
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

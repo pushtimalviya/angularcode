@@ -1,0 +1,110 @@
+Technologies.
+1.Single Page Applications (ui.router)
+2.localStorage
+3.Bootstrap
+4.jQuery
+5.Node Server
+6.MySQL / MongoDB / Cassandra / SQL Server
+7.Interceptors
+8.Token Based Authentication System
+9.Grunt
+10.JBOSS / Tomcat / Weblogic / IIS
+11.TestCases
+
+
+Modules in Mini_Project.
+
+1.login
+
+2.register
+
+3.home
+    login.
+           - login module will compare the user credentials
+
+              in mysql database with node server.
+
+    register.
+           - register module will save the user information in mysql
+
+             with node server.
+
+     home.
+
+            - will interacts with the end user and performs the Required
+              Opearations with Node / Tomcat / IIS with MySQL / MongoDB/ Cassandra
+
+
+Step 1.
+
+    Implement the SPA by using ui.router module.
+
+----------------
+templates
+    login.html
+    home.html
+    register.html
+----------------
+
+----------------------------
+controllers
+    loginController.js
+    homeController.JS
+    registerController.js
+-----------------------------
+
+
+
+Step 2.
+
+    Implement the login.html --->  register.html
+
+                  register.html --->  login.html
+
+login.html
+-
+
+    --
+    --
+    --
+
+    <a ui-sref="register">Register?</a>
+
+
+
+register.html
+-
+
+    ---
+    ---
+    ---
+
+    <a ui-sref="login">Login</a>
+
+
+
+
+Step 3.
+
+    Pass the Data From loginController to loginService.
+
+    "data"  --- > u_name : uname  && u_pwd:upwd
+
+------------
+services
+    loginService.js
+------------
+app.service("loginService",loginService);
+loginService.$inject=["$http"];
+function loginService($http){
+    this.authenicate = function(data){
+        console.log(data);
+    };
+};
+
+
+app.controller("loginController",loginController);
+loginController.$inject=["$scope","loginService"];
+function loginController($scope,loginService){
+    loginService.authenicate(data);
+}

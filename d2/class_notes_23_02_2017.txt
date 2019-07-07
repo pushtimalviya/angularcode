@@ -1,0 +1,126 @@
+3.By using AngularJS We Can Reduce the Burden on the Server
+
+	[ We Can Implement the Business Components Client Side By Using MVC ]
+
+
+
+4. AngularJS Supports the Two Way Data Binding.
+
+	[ Automatic Data Synchronization between Model and View with the Super Vision of 
+Controller called as Two Way data binding ]
+
+
+Description.
+
+	If we are the Programming languages like java,dot net, php,..... developer , we 
+must make a three server calls to complete the DB Transactions.
+
+	1.Fetch Server Call   (Fetching the Records from DB)
+
+	2.Delete Server Call  (Delete the records from the DB)
+
+	3.Ajax Call (Avoid the Data Inconsistence Problem) 
+
+
+	if we are the AngularJS Developer , we can complete above tasks with two server 
+        hits because of "two way data binding"
+
+
+
+[ Note. two-way data binding also reduces the burden on the server ]
+
+
+4. We can Create the Reusable Components by using AngularJS
+
+	Ex. Custom Directives
+
+	    Custom Services
+
+	    Custom Filters
+
+		--
+		--
+		--
+
+
+
+5.By using AngularJS We Can Create the Single Page Applications
+
+	[ Angular Framework will maintain the cache mechanism to cache the Templates of 
+          Single Page Applications]
+
+
+	[ Cache mechanism in AngularJS Called as "Template Cache Mechanism"]
+
+
+
+
+Disadvantages of AngularJS.
+-
+
+1.Secuirity
+
+
+2.Client Should Enable the JavaScript , then only we can run the Angular Applications.
+
+
+
+3.No Coding Standards Given by the Vendors, so undestanding the Angular Applications are 
+  difficult.
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
